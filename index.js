@@ -10,8 +10,8 @@ var axios = require('axios');
 async function getToken() {
   const res = await axios.post('https://mc3w1yx46mrt3v9tcw-ccr5m028m.auth.marketingcloudapis.com/v2/token'
     , {
-      grant_type: "client_credentials", client_id: "2gkth000jkm0n1s2vmzikto4",
-      client_secret: "j00CCKoJSBBPbJ0bJSzj8Jl0"
+      grant_type: "client_credentials", client_id: "xxxxxxxxxxxxxxxx",
+      client_secret: "xxxxxxxxxxxxxx"
     });
 
   return await res;
