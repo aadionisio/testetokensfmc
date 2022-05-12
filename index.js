@@ -1,12 +1,6 @@
 var axios = require('axios');
 
 
-
-// axios.get('https://mc3w1yx46mrt3v9tcw-ccr5m028m.auth.marketingcloudapis.com/v2/token'
-// , headers: { Authorization: `Bearer ${token}` } ).then(function (response) {
-//   console.log(response.data.access_token);
-// });
-
 async function getToken() {
   const res = await axios.post('https://xxxxxxxxxxx.auth.marketingcloudapis.com/v2/token'
     , {
