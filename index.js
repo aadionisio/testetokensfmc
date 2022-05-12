@@ -8,7 +8,7 @@ var axios = require('axios');
 // });
 
 async function getToken() {
-  const res = await axios.post('https://mc3w1yx46mrt3v9tcw-ccr5m028m.auth.marketingcloudapis.com/v2/token'
+  const res = await axios.post('https://xxxxxxxxxxx.auth.marketingcloudapis.com/v2/token'
     , {
       grant_type: "client_credentials", client_id: "xxxxxxxxxxxxxxxx",
       client_secret: "xxxxxxxxxxxxxx"
@@ -30,7 +30,7 @@ try {
 
     console.log(access_token);
 
-    axios.get('https://mc3w1yx46mrt3v9tcw-ccr5m028m.rest.marketingcloudapis.com/data/v1/customobjectdata/key/AD3ABBAA-1AC1-4CE5-845E-C78C101CF2BA/rowset?$filter=email%20eq%20"rafael.santos_dextra%40prestador.globo"%20and%20nome%20eq%20"Rafael%20Santos"'
+    axios.get('https://xxxxxxxxx.rest.marketingcloudapis.com/data/v1/customobjectdata/key/xxxxxxxxxxxxxxxxx/rowset?$filter=email%20eq%20"rafael.santos_dextra%40prestador.globo"%20and%20nome%20eq%20"Rafael%20Santos"'
       , { headers: { Authorization: `Bearer ${access_token}` } }).then(function (response2) {
         console.log(response2.data);
       });
